@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>美術字體校正</title>
         <style>
             * {
                 margin: 0;
@@ -13,6 +13,7 @@
             .warp {
                 height: 100vh;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
@@ -29,10 +30,15 @@
                 border: 10px dashed black;
                 background-clip: content-box;
             }
+            .title {
+                font-size: 6rem;
+            }
         </style>
     </head>
     <body>
         <div class="warp">
+            <h1 class="title">美術字體校正</h1>
+            文字間距<input type="text" id="spacing" value="0" />
             <div id="uploadZone" class="upload-zone">丟檔案上乃</div>
         </div>
     <script type="text/javascript" src="index.js"></script></body>
